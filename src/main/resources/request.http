@@ -1,0 +1,19 @@
+###
+POST http://localhost:8088/api/purchase_ticket
+Content-Type: application/json
+
+{
+  "from": "London",
+  "to": "France",
+  "user": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com"
+  }
+}
+
+###
+GET http://localhost:8088/api/view_receipt/john.doe@example.com
+
+###
+GET http://localhost:8088/api/view_allocation/A
